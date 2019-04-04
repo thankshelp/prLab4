@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Add" Height="170.488" Width="347.061">
     <Grid Margin="0,0,-8,-7">
-        <TextBlock x:Name="fio" HorizontalAlignment="Left" Height="28" Margin="135,24,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="193"/>
-        <TextBlock x:Name="fiz" HorizontalAlignment="Left" Height="22" Margin="23,64,0,0" TextWrapping="Wrap" Text="Физика" VerticalAlignment="Top" Width="107"/>
-        <TextBlock x:Name="mat" HorizontalAlignment="Left" Height="22" Margin="135,64,0,0" TextWrapping="Wrap" Text="Математика" VerticalAlignment="Top" Width="121"/>
         <Button x:Name="ok" Content="Добавить" HorizontalAlignment="Left" Height="22" Margin="23,104,0,0" VerticalAlignment="Top" Width="84" Click="Ok_Click"/>
         <Button x:Name="otm" Content="Отмена" HorizontalAlignment="Left" Height="22" Margin="130,104,0,0" VerticalAlignment="Top" Width="89" Click="Otm_Click"/>
-        <TextBlock x:Name="num" HorizontalAlignment="Left" Height="28" Margin="23,24,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="num" HorizontalAlignment="Left" Height="22" Margin="23,20,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Width="84"/>
+        <TextBox x:Name="fio" HorizontalAlignment="Left" Height="22" Margin="130,20,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="141"/>
+        <TextBox x:Name="fiz" HorizontalAlignment="Left" Height="28" Margin="23,58,0,0" TextWrapping="Wrap" Text="Физика" VerticalAlignment="Top" Width="84"/>
+        <TextBox x:Name="mat" HorizontalAlignment="Left" Height="28" Margin="130,58,0,0" TextWrapping="Wrap" Text="Математика" VerticalAlignment="Top" Width="141"/>
 
     </Grid>
 </Window>
