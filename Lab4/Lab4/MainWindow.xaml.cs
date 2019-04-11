@@ -24,6 +24,8 @@ namespace Lab4
     {
         public int uid { get; set; }
         public string FIO { get; set; }
+        public int fizic { get; set; }
+        public int matem { get; set; }
     }
 
     public partial class MainWindow : Window
@@ -69,10 +71,30 @@ namespace Lab4
 
         private void open_Click(object sender, RoutedEventArgs e)
         {
-            string sql = "SELECT * FROM test2 ORDER BY uid";
+            string sql = "SELECT * FROM students ORDER BY uid";
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             SQLiteDataReader reader = command.ExecuteReader();
-            while (reader.Read())
+            while (reader.Read()) {
+                var data = new CTest { uid = int.Parse(reader["uid"].ToString()), FIO = reader["FIO"].ToString() };
+                datag.Items.Add(data); 
+                    }
+        }
+
+        private void Red_Click(object sender, RoutedEventArgs e)
+        {
+            adt = new Add();
+
+            if (adt.ShowDialog() == true)
+            {
+                string sql = "INSERT INTO students (uid, FIO) VALUES (" + adt.num.Text + ",'" + adt.fio.Text + "')";
+                string gr = "INSERT INTO grades (uid, phys, math) VALUES (" + adt.num.Text + "," + adt.fiz.Text + "," + adt.mat.Text + ")";
+
+                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+                SQLiteCommand grad = new SQLiteCommand(gr, m_dbConnection);
+
+                command.ExecuteNonQuery();
+                grad.ExecuteNonQuery();
+            }
 
         }
     }

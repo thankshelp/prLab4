@@ -25,3 +25,30 @@ C:\ри-89\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 C:\ри-89\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CopyComplete
 C:\ри-89\Lab4\Lab4\Lab4\obj\Debug\Lab4.exe
 C:\ри-89\Lab4\Lab4\Lab4\obj\Debug\Lab4.pdb
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\Lab4.exe.config
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\Lab4.exe
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\Lab4.pdb
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\EntityFramework.dll
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\EntityFramework.SqlServer.dll
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.dll
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\EntityFramework.xml
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\EntityFramework.SqlServer.xml
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.xml
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.dll.config
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Add.g.cs
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\MainWindow.g.cs
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\App.g.cs
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.cache
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.lref
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Add.baml
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\MainWindow.baml
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.g.resources
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CopyComplete
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.exe
+D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.pdb

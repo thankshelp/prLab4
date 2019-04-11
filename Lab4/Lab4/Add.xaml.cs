@@ -24,6 +24,16 @@ namespace Lab4
             InitializeComponent();
         }
 
+        public Add(string sql, string gr)
+        {
+            InitializeComponent();
+
+            this.num.Text = Uid.ToString();
+            this.fio.Text = fio.ToString();
+            //this.fiz.Text = phys
+            //this.mat.Text = math
+        }
+
         private void Ok_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;

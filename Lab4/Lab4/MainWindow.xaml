@@ -8,13 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="add_str" Content="Добавить запись" HorizontalAlignment="Left" Height="43" Margin="23,10,0,0" VerticalAlignment="Top" Width="145" Click="Add_str_Click"/>
-        <DataGrid x:Name="data" HorizontalAlignment="Left" Height="295" Margin="23,78,0,0" VerticalAlignment="Top" Width="644">
+        <DataGrid x:Name="datag" HorizontalAlignment="Left" Height="295" Margin="23,78,0,0" VerticalAlignment="Top" Width="644">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Binding="{Binding uid}" ClipboardContentBinding="{x:Null}" Header="uid"/>
                 <DataGridCheckBoxColumn Binding="{Binding FIO}" ClipboardContentBinding="{x:Null}" Header="FIO"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="open" Content="Загрузить" HorizontalAlignment="Left" Height="43" Margin="173,10,0,0" VerticalAlignment="Top" Width="140" Click="open_Click"/>
+        <Button x:Name="red" Content="Редактировать" HorizontalAlignment="Left" Height="43" Margin="318,10,0,0" VerticalAlignment="Top" Width="141" Click="Red_Click"/>
 
     </Grid>
 </Window>
