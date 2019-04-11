@@ -24,8 +24,8 @@ namespace Lab4
     {
         public int uid { get; set; }
         public string FIO { get; set; }
-        public int fizic { get; set; }
-        public int matem { get; set; }
+        public int phys { get; set; }
+        public int math { get; set; }
     }
 
     public partial class MainWindow : Window
@@ -71,29 +71,39 @@ namespace Lab4
 
         private void open_Click(object sender, RoutedEventArgs e)
         {
-            string sql = "SELECT * FROM students ORDER BY uid";
+            string sql = "SELECT * FROM students, grades WHERE students.uid = grades.uid ORDER BY uid";
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             SQLiteDataReader reader = command.ExecuteReader();
-            while (reader.Read()) {
-                var data = new CTest { uid = int.Parse(reader["uid"].ToString()), FIO = reader["FIO"].ToString() };
-                datag.Items.Add(data); 
-                    }
+
+            while (reader.Read())
+            {
+                var data = new CTest {uid = int.Parse(reader["uid"].ToString()), math = int.Parse(reader["math"].ToString()), phys = int.Parse(reader["phys"].ToString()),  FIO = reader["FIO"].ToString()};
+                datag.Items.Add(data);
+                //lb.Items.Add(reader["math"].ToString());
+                //lb.Items.Add(reader["FIO"].ToString());
+            }
         }
 
         private void Red_Click(object sender, RoutedEventArgs e)
         {
-            adt = new Add();
+            CTest test = (CTest)datag.SelectedItem;
+            
+            adt = new Add(test.uid.ToString(), test.FIO.ToString(), test.phys.ToString(), test.math.ToString());
 
             if (adt.ShowDialog() == true)
             {
                 string sql = "INSERT INTO students (uid, FIO) VALUES (" + adt.num.Text + ",'" + adt.fio.Text + "')";
                 string gr = "INSERT INTO grades (uid, phys, math) VALUES (" + adt.num.Text + "," + adt.fiz.Text + "," + adt.mat.Text + ")";
 
+                
                 SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
                 SQLiteCommand grad = new SQLiteCommand(gr, m_dbConnection);
 
                 command.ExecuteNonQuery();
                 grad.ExecuteNonQuery();
+
+                //datag.Items.RemoveAt
+                //datag.Items.Insert
             }
 
         }

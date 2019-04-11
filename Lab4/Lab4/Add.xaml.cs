@@ -24,14 +24,14 @@ namespace Lab4
             InitializeComponent();
         }
 
-        public Add(string sql, string gr)
+        public Add(string uid, string fio, string p, string m)
         {
             InitializeComponent();
 
-            this.num.Text = Uid.ToString();
-            this.fio.Text = fio.ToString();
-            //this.fiz.Text = phys
-            //this.mat.Text = math
+            this.num.Text = uid;
+            this.fio.Text = fio;
+            this.fiz.Text = p;
+            this.mat.Text = m;
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
