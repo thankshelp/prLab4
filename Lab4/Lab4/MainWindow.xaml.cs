@@ -92,15 +92,27 @@ namespace Lab4
 
             if (adt.ShowDialog() == true)
             {
-                string sql = "INSERT INTO students (uid, FIO) VALUES (" + adt.num.Text + ",'" + adt.fio.Text + "')";
-                string gr = "INSERT INTO grades (uid, phys, math) VALUES (" + adt.num.Text + "," + adt.fiz.Text + "," + adt.mat.Text + ")";
+                //string sql = "INSERT INTO students (uid, FIO) VALUES (" + adt.num.Text + ",'" + adt.fio.Text + "')";
+                //string gr = "INSERT INTO grades (uid, phys, math) VALUES (" + adt.num.Text + "," + adt.fiz.Text + "," + adt.mat.Text + ")";
+                test.uid = int.Parse(adt.num.Text);
+                test.FIO = adt.fio.Text;
+                test.phys = int.Parse(adt.fiz.Text);
+                test.math = int.Parse(adt.mat.Text);
 
-                
-                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
-                SQLiteCommand grad = new SQLiteCommand(gr, m_dbConnection);
+                int si = datag.SelectedIndex;
 
-                command.ExecuteNonQuery();
-                grad.ExecuteNonQuery();
+                datag.Items.RemoveAt(si);
+
+                var data = new CTest { uid = test.uid, FIO = test.FIO, phys = test.phys, math = test.math };
+                datag.Items.Insert(si, data);
+                datag.Items.Refresh();
+
+                //string sql = "UPDATE students  SET FIO = 'adt.fio.Text' WHERE "
+                //SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+                //SQLiteCommand grad = new SQLiteCommand(gr, m_dbConnection);
+
+                //command.ExecuteNonQuery();
+                //grad.ExecuteNonQuery();
 
                 //datag.Items.RemoveAt
                 //datag.Items.Insert
