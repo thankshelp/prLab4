@@ -6,18 +6,20 @@
         xmlns:local="clr-namespace:Lab4"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,-152,0">
+    <Grid Margin="0,0,2,0">
         <Button x:Name="add_str" Content="Добавить запись" HorizontalAlignment="Left" Height="43" Margin="23,10,0,0" VerticalAlignment="Top" Width="145" Click="Add_str_Click"/>
         <DataGrid x:Name="datag" HorizontalAlignment="Left" Height="295" Margin="23,78,0,0" VerticalAlignment="Top" Width="644">
             <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding schet}" ClipboardContentBinding="{x:Null}" Header="number"/>
                 <DataGridTextColumn Binding="{Binding uid}" ClipboardContentBinding="{x:Null}" Header="uid"/>
+                <DataGridTextColumn Binding="{Binding FIO}" ClipboardContentBinding="{x:Null}" Header="FIO"/>
                 <DataGridTextColumn Binding="{Binding math}" ClipboardContentBinding="{x:Null}" Header="math"/>
                 <DataGridTextColumn Binding="{Binding phys}" ClipboardContentBinding="{x:Null}" Header="phys"/>
-                <DataGridTextColumn Binding="{Binding FIO}" ClipboardContentBinding="{x:Null}" Header="FIO"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="open" Content="Загрузить" HorizontalAlignment="Left" Height="43" Margin="173,10,0,0" VerticalAlignment="Top" Width="140" Click="open_Click"/>
         <Button x:Name="red" Content="Редактировать" HorizontalAlignment="Left" Height="43" Margin="318,10,0,0" VerticalAlignment="Top" Width="141" Click="Red_Click"/>
+        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" Height="43" Margin="464,10,0,0" VerticalAlignment="Top" Width="145" Click="Del_Click"/>
 
     </Grid>
 </Window>

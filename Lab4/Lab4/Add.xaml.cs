@@ -32,6 +32,7 @@ namespace Lab4
             this.fio.Text = fio;
             this.fiz.Text = p;
             this.mat.Text = m;
+            
         }
 
         private void Ok_Click(object sender, RoutedEventArgs e)
