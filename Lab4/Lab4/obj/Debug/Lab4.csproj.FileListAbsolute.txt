@@ -52,3 +52,30 @@ D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\La
 D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CopyComplete
 D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.exe
 D:\Программирование\2 семестр\Lab4\Lab4\Lab4\obj\Debug\Lab4.pdb
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\Lab4.exe.config
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\Lab4.exe
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\Lab4.pdb
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\EntityFramework.dll
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\EntityFramework.SqlServer.dll
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.dll
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.EF6.dll
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.Linq.dll
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\EntityFramework.xml
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\EntityFramework.SqlServer.xml
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.xml
+C:\ри-89\prLab4\Lab4\Lab4\bin\Debug\System.Data.SQLite.dll.config
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Add.g.cs
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\MainWindow.g.cs
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\App.g.cs
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.cache
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.lref
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Add.baml
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\MainWindow.baml
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.g.resources
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.csproj.CopyComplete
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.exe
+C:\ри-89\prLab4\Lab4\Lab4\obj\Debug\Lab4.pdb

@@ -10,7 +10,6 @@
         <Button x:Name="add_str" Content="Добавить запись" HorizontalAlignment="Left" Height="43" Margin="23,10,0,0" VerticalAlignment="Top" Width="145" Click="Add_str_Click"/>
         <DataGrid x:Name="datag" HorizontalAlignment="Left" Height="295" Margin="23,78,0,0" VerticalAlignment="Top" Width="644">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding schet}" ClipboardContentBinding="{x:Null}" Header="number"/>
                 <DataGridTextColumn Binding="{Binding uid}" ClipboardContentBinding="{x:Null}" Header="uid"/>
                 <DataGridTextColumn Binding="{Binding FIO}" ClipboardContentBinding="{x:Null}" Header="FIO"/>
                 <DataGridTextColumn Binding="{Binding math}" ClipboardContentBinding="{x:Null}" Header="math"/>
