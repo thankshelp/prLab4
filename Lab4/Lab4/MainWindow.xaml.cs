@@ -82,7 +82,7 @@ namespace Lab4
                     }
                     else
                     {
-                        MessageBox.Show("Введены не верные оценки!");
+                        MessageBox.Show("Введены неверные оценки!");
                     }
                 }
                 catch (SQLiteException)
@@ -111,7 +111,7 @@ namespace Lab4
                 }
                 else
                 {
-                    MessageBox.Show("Введены не верные оценки!");
+                    MessageBox.Show("Введеныне верные оценки!");
                     break;
                 }
             }
@@ -131,23 +131,9 @@ namespace Lab4
                 {
                     try
                     {
-                        //string sql = "INSERT INTO students (uid, FIO) VALUES (" + adt.num.Text + ",'" + adt.fio.Text + "')";
-                        //string gr = "INSERT INTO grades (uid, phys, math) VALUES (" + adt.num.Text + "," + adt.fiz.Text + "," + adt.mat.Text + ")";
-                        test.uid = int.Parse(adt.num.Text);
-                        test.FIO = adt.fio.Text;
-                        test.phys = int.Parse(adt.fiz.Text);
-                        test.math = int.Parse(adt.mat.Text);
-
-
-
                         int si = datag.SelectedIndex;
 
                         datag.Items.RemoveAt(si);
-
-                        var data = new CTest { uid = test.uid, FIO = test.FIO, phys = test.phys, math = test.math };
-                        datag.Items.Insert(si, data);
-                        datag.Items.Refresh();
-
 
                         string sql = "UPDATE students SET uid = " + adt.num.Text + ", FIO ='" + adt.fio.Text + "' WHERE uid = " + test.uid.ToString();
                         string gr = "UPDATE grades SET uid = " + adt.num.Text + ", phys =" + adt.fiz.Text + ", math =" + adt.mat.Text + " WHERE uid = " + test.uid.ToString();
@@ -156,6 +142,10 @@ namespace Lab4
 
                         command.ExecuteNonQuery();
                         grad.ExecuteNonQuery();
+
+                        var data = new CTest { uid = int.Parse(adt.num.Text), FIO = adt.fio.Text, phys = int.Parse(adt.fiz.Text), math = int.Parse(adt.mat.Text) };
+                        datag.Items.Insert(si, data);
+                        datag.Items.Refresh();
                     }
                     catch (FormatException)
                     {
